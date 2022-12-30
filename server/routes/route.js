@@ -1,15 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const addUser = require('./../controller/user-controller')
+const controller = require('./../controller/user-controller')
 
-router.get('/', (req, res) => {
-    res.send('Hello from Server')
-})
-
-router.get('/add', (req, res) => {
-    res.send('Hello from servemr add')
-})
-
-router.post('/add', addUser)
+router.post('/add', controller.addUser)
+router.get('/all', controller.getUsers)
 
 module.exports = router
