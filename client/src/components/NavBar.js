@@ -20,7 +20,7 @@ const NavBar = () => {
         // AppBar -> Header (to apply CSS)
         <Header position='static'> 
             <Toolbar>
-                <Tabs to = '/'>CRUD Application </Tabs>
+                <Tabs to = '/'>CRUD</Tabs>
                 <Tabs to = 'all'>All Users</Tabs>
                 <Tabs to = '/add'>Add User</Tabs>
             </Toolbar>
